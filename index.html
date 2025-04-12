@@ -13,6 +13,8 @@
     <link href="css/main.css" rel="stylesheet">
     <link rel="image_src" href="img/icon.png" />
     <link rel="icon" type="image/png" href="img/icon.png"/>
+
+    <!-- Forked From this Repo -->
     <meta property="og:url" content="https://inloop.github.io/sqlite-viewer/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="SQLite Viewer">
@@ -29,7 +31,6 @@
 
         <div class="col">
             <h4 class="mb-0">SQLite Viewer</h4>
-            <p class="mb-0">view sqlite file online</p>
         </div>
 
         <a href="#" id="resizer" aria-label="Expand/Collapse" class="col-auto text-decoration-none" style="color: #3474A8">
@@ -49,13 +50,8 @@
     <div class="row text-center p-3 align-items-stretch" id="dropzone" onclick="dropzoneClick(this)">
         <div class="d-flex border border-info-subtle rounded-1 align-items-center justify-content-center">
             <div id="drop-text">
-                <b>Drop file here</b> to load content or click on this box to open file dialog.<br/>
+                <b>Drop file here</b> or <b>Click</b><br/>
 
-                <div class="nouploadinfo small mb-3">No file will be uploaded - uses only JavaScript HTML5 FileReader.
-                </div>
-
-                <a id="sample-db-link" class="no-propagate small text-decoration-none"
-                   href="examples/Chinook_Sqlite.sqlite">&hellip; or download &amp; try this sample file</a>
             </div>
             <div id="drop-loading" class="d-flex align-items-center d-none">
                 <div class="spinner-border me-2" role="status">
@@ -120,10 +116,6 @@
         </button>
     </div>
 </div>
-
-<footer class="col text-center text-secondary py-2 my-1 small" id="footer">
-    <small>| <a href="https://github.com/inloop/sqlite-viewer" class="text-decoration-none link-opacity-75">2024 Juraj Novák</a> |</small>
-</footer>
 
 <input type="file" id="dropzone-dialog" style="opacity: 0;display:none">
 
